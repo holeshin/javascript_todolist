@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    background-image: url(images/hand-painted-watercolor-background-with-sky-clouds-shape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.input-area{
+    margin-bottom: 10px;
+}
+.task-area{
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+.task-tabs div{
+ padding: 1em;   
+}
+#under-line{
+    height: 4px;
+    background-color: pink;
+    position: absolute;
+    width: 60px;
+    left: 0px;
+    top: 52px;
+    padding: 0px;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+}
+.task span{
+    padding: 1em;
+}
+.task-done{
+    text-decoration: line-through;
+    background-color: lightgray;
+    transition: 0.5s;
+}
+.task-tabs div{
+    cursor: pointer;
+}
+.button-box{
+    display: flex;
+}
+.button-box button{
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+.fa-rotate-left{
+color: gray;
+}
+.fa-trash{
+    color:red;
+} 
+.fa-check{
+    color: limegreen;
+}
+#pink:hover{
+    background-color: pink;
+}
+#green:hover{
+    background-color: lightgreen;
+}
