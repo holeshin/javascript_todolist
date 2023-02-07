@@ -13,15 +13,16 @@ let list=[];
 let taskList =[];
 let filterList= [];
 let mode ='all';
+
 addButton.addEventListener("click",()=>{
-    if(taskInput.value.length>1){
+    if(taskInput.value.length >0){
         addTask();
         taskInput.value="";
     }
 });
 taskInput.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-        if(taskInput.value.length>1){
+        if(taskInput.value.length>0){
             addTask();
             taskInput.value="";
         }
@@ -53,7 +54,7 @@ function render(){
     }else if (mode == "ongoing" || mode== "done"){
         list = filterList;
     }
-    let resultHTML =''
+    let resultHTML ='';
     for(let i=0; i<list.length; i++){
 
         if(list[i].isComplete == true){
@@ -104,7 +105,7 @@ function deleteTask(id){
 
 function filter(event){
     mode = event.target.id;
-  filterList=[];
+    filterList=[];
 
   document.getElementById("under-line").style.width=
   event.target.offsetWidth+ "px";
